@@ -10,6 +10,14 @@ class NumberNode:
 
 
 @dataclass
+class VariableNode:
+    value: float
+
+    def __repr__(self) -> str:
+        return f"{self.value}"
+
+
+@dataclass
 class AdditionNode:
     node_a: any  # type: ignore
     node_b: any  # type: ignore

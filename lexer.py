@@ -6,8 +6,8 @@ WHITESPACE = " \n\t"
 
 class Lexer:
 
-    def __init__(self, text):
-        self.text = iter(text)
+    def __init__(self, expression):
+        self.expression = iter(expression)
         self.advance()
 
         self.token_type = {
@@ -24,7 +24,7 @@ class Lexer:
 
     def advance(self):
         try:
-            self.current_char = next(self.text)
+            self.current_char = next(self.expression)
         except StopIteration:
             self.current_char = None
 

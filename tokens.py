@@ -4,9 +4,10 @@ from dataclasses import dataclass
 
 class TokenType(Enum):
     NUMBER = 0
+    VARIABLE = 0
     PLUS = 1
     MINUS = 2
-    # MODULUS = 3
+    MODULUS = 2
     MULTIPLY = 3
     DIVIDE = 4
     EXPONENT = 5

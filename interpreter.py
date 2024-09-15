@@ -11,6 +11,9 @@ class Interpreter:
     def visit_NumberNode(self, node):
         return NumberNode(node.value)
 
+    def visit_VariableNode(self, node):
+        return NumberNode(node.value)
+
     def visit_AdditionNode(self, node):
         return Number(self.visit(node.node_a).value + self.visit(node.node_b).value)
 
