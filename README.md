@@ -16,6 +16,7 @@ various operations such as addition, subtraction, multiplication, division, modu
 ## Usage
 
 To use the Math_Interpreter, you can run the main script with a mathematical expression as input:
+
 ```githubexpressionlanguage
 >>> "2 + 3 * 4"
 ```
@@ -31,17 +32,26 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Detailed Description
 
-Tokenization
-The tokens.py file defines the TokenType enum and the Token dataclass. The TokenType enum includes types such as NUMBER,
-VARIABLE, PLUS, MINUS, MODULUS, MULTIPLY, DIVIDE, EXPONENT, LPAREN, and RPAREN.  
-Values
-The values.py file defines the Number and Variable dataclasses. These classes are used to represent numerical values and
-variables within expressions.  
-Error Handling
-The error_handling.py file contains the RaiseError class, which provides methods for raising exceptions related to
-common errors like division by zero and unclosed parentheses.  
-Parsing
-The parser.py file (not shown in the excerpts) would contain the logic for converting a sequence of tokens into an
-abstract syntax tree (AST).  
-Evaluation
-The interpreter.py file (not shown in the excerpts) would contain the logic for evaluating the AST to produce a result.
+### Tokenization
+
+The `tokens.py` file defines the TokenType enum and the Token dataclass. The TokenType enum includes types such as **NUMBER,
+VARIABLE, PLUS, MINUS, MODULUS, MULTIPLY, DIVIDE, EXPONENT, LPAREN, and RPAREN**.
+
+### Values
+
+The `values.py` file defines the Number and Variable dataclasses. These classes are used to represent numerical values and
+variables within expressions.
+
+### Error Handling
+
+The `error_handling.py` file contains the RaiseError class, which provides methods for raising exceptions related to
+common errors like division by zero and unclosed parentheses.
+
+### Parsing
+
+The `parser.py` file (not shown in the excerpts) would contain the logic for converting a sequence of tokens into an
+**abstract syntax tree (AST)**.
+
+### Evaluation
+
+The `interpreter.py` file (not shown in the excerpts) would contain the logic for evaluating the AST to produce a result.
